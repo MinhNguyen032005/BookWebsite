@@ -114,7 +114,7 @@ form {
 }
 
 main .textdangnhap {
-    margin-left:10% ;
+    margin-left: 10%;
     color: #4D6A55;
     font-family: "Lato", sans-serif;
     font-size: 60px;
@@ -125,7 +125,7 @@ main .textdangnhap {
 }
 
 main .mota {
-    margin-left:10% ;
+    margin-left: 10%;
     width: 375px;
     height: 45px;
     flex-shrink: 0;
@@ -234,7 +234,6 @@ main .dangnhapbangcachkhac {
 }
 
 main .dangnhapbangcachkhac h10 {
-
     color: #000;
     text-align: center;
     font-family: Lato;
@@ -261,10 +260,9 @@ main .iconfacebook {
 
 main .icongoogle {
     width: 45px;
-    background: url(img/gg_logo.png) 50% / cover no-repeat;
+    background: url(img/gg_logo_login.png) 50% / cover no-repeat;
     height: 45px;
     flex-shrink: 0;
-    /* fill: #FFF; */
 
 
 }
