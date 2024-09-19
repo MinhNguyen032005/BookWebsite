@@ -113,56 +113,29 @@ main {
 
 form {
     display: grid;
-    gap: 30px;
+    gap: 40px;
 
 }
 
 main .textdangnhap {
     margin-left: 10%;
     color: #4D6A55;
-    font-family: "Lato", sans-serif;
-    font-size: 60px;
-    font-style: bold;
-    font-weight: 700px;
-    line-height: normal;
-    /* line-height: normal; */
+    font-family: "Lato",sans-serif;
+    font-size: 36px;
+    font-style: normal;
 }
 
-main .mota {
-    margin-left: 10%;
-    width: 375px;
-    height: 45px;
-    flex-shrink: 0;
-    color: #535252;
-    font-family: "Lato", sans-serif;
-    font-size: 15px;
-    font-style: light;
-    font-weight: 500;
-    line-height: normal;
-}
-
-main .inputmatkhau,
+main .inputxacnhanmatkhaumoi,
+main .inputmaxacnhan,
+main .inputmatkhaumoi,
 main .inputemail {
     text-align: center;
     position: static;
 }
 
-main .inputemail p {
-    margin-left: 3%;
-    text-align: end;
-    display: flex;
-    width: 195px;
-    height: 30px;
-    flex-direction: column;
-    justify-content: center;
-    color: #2E2E2E;
-    font-family: Lato;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
+main .inputmatkhaumoi input,
+main .inputxacnhanmatkhaumoi input,
+main .inputmaxacnhan input,
 main .inputemail input {
     width: 420px;
     height: 30px;
@@ -172,8 +145,11 @@ main .inputemail input {
     background: #FFF;
 }
 
+main .inputemail p,
+main .inputxacnhanmatkhaumoi p,
+main .inputmaxacnhan p,
+main .inputmatkhaumoi p,
 main .inputmatkhau p {
-    margin-left: -1%;
     text-align: end;
     display: flex;
     width: 195px;
@@ -181,42 +157,47 @@ main .inputmatkhau p {
     flex-direction: column;
     justify-content: center;
     color: #2E2E2E;
-    font-family: Lato;
+    font-family: "Lato", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-main .inputmatkhau input {
-    width: 420px;
-    height: 30px;
-    flex-shrink: 0;
-    border-radius: 5px;
-    border: 0.5px solid #2E2E2E;
-    background: #FFF;
-}
-
-main .dangnhapbangcachkhac {
-    display: grid;
-}
-
-main .quenmk a {
+main .inputemail a {
     text-decoration: none;
 }
 
-main .quenmk p {
-    margin-left: 18%;
-    display: flex;
-    width: 180px;
-    height: 28px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #000;
+main .inputemail a p {
+    position: absolute;
+    margin-left: 49%;
+    color: #4D6A55;
+    text-align: right;
     font-family: "Lato", sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-style: normal;
+}
+
+main .inputemail p {
+    margin-left: 3%;
+}
+
+main .inputmaxacnhan p {
+    margin-left: 10px;
+}
+
+main .inputmatkhaumoi p {
+    margin-left: 20px;
+}
+
+main .inputemail p {
+    margin-left: 10px;
+
+}
+
+main .inputxacnhanmatkhaumoi p {
+    margin-left: 8%;
+    width: 250px;
 }
 
 main button {
@@ -236,59 +217,6 @@ main .dangnhap {
     transform: translate(33%, 10%);
 }
 
-main .dangnhapbangcachkhac {
-    text-align: center;
-
-}
-
-main .dangnhapbangcachkhac h10 {
-    color: #000;
-    text-align: center;
-    font-family: Lato;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-main .dangnhapbangcachkhac hr {
-
-    width: 225px;
-    height: 1px;
-    background: #000;
-    display: flex;
-
-}
-
-main .iconfacebook {
-    width: 45px;
-    height: 45px;
-    flex-shrink: 0;
-}
-
-main .icongoogle {
-    width: 45px;
-    background: url(img/gg_logo_login.png) 50% / cover no-repeat;
-    height: 45px;
-    flex-shrink: 0;
-
-
-}
-
-main .icontwichter {
-    width: 45px;
-    height: 45px;
-    flex-shrink: 0;
-}
-
-main .icon {
-    margin: auto;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    gap: 50px;
-}
-
 main .dangky {
     margin: auto;
     text-align: center;
@@ -297,11 +225,10 @@ main .dangky {
 main .dangky h11 {
     color: #000;
     text-align: center;
-    font-family: Lato;
+    font-family: "Lato";
     font-size: 13px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+
 }
 
 main .dangky a {
