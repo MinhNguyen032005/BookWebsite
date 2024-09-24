@@ -310,12 +310,13 @@ nav .foodterright {
 }
 
 section {
+    
     width: 1200px;
     height: 1407px;
     flex-shrink: 0;
     background-color: #E9F1EC;
     border-radius: 10px;
-    margin: auto;
+    margin: 2% auto;
 }
 
 .container {
