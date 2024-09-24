@@ -96,7 +96,7 @@ nav .menu {
 
 footer nav {
     position: absolute;
-    top: 225%;
+    top: 250%;
     background-size: cover;
     background: #51705A;
     width: 100%;
@@ -262,9 +262,12 @@ nav .foodterright {
     padding: 10px;
 
 }
+.partners .bidv {
+    height: 80px;
+}
 
 .vnpay {
-    width: 170px;
+    width: 150px;
     height: auto;
     flex-shrink: 0;
     background: #FFF;
