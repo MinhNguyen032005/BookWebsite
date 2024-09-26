@@ -312,7 +312,7 @@ nav .foodterright {
 section {
 
     width: 1200px;
-    height: 1407px;
+    height: 1580px;
     flex-shrink: 0;
     background-color: #E9F1EC;
     border-radius: 10px;
@@ -371,26 +371,53 @@ section {
 
 }
 
+.thongtinbenduoisanpham {
+    display: flex;
+    width: 250px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    margin-bottom: 2%;
+    /* font-weight: bold; */
+    /* font-style: initial; */
+}
 
 .product-details {
-
+    margin-top: 10%;
+    margin-left: 8%;
     margin-bottom: 20px;
 
 }
 
+.thongtinchitietcuongsach span {
 
-.product-details p {
+    color: #2E2E2E;
 
-    margin-bottom: 10px;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    /* font-weight: 300;
+    line-height: normal; */
+
+
+}
+
+.thongtinchitietcuongsach p {
+    color: #2E2E2E;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    /* font-weight: 300;
+    line-height: normal; */
 
 }
 
 
-.product-details span {
 
-    font-weight: bold;
-
-}
 
 .ngayydukien span {
     width: 300px;
@@ -504,17 +531,22 @@ input[type=number] {
 }
 
 .product-actions {
-
+    display: flex;
+    margin-top: 10%;
+    gap: 50px;
     margin-bottom: 20px;
 
 }
 
 
 .product-actions button {
+    width: 240px;
+    height: 45px;
+    flex-shrink: 0;
 
     padding: 10px 20px;
 
-    background-color: #007bff;
+    background-color: #4D6A55;
 
     color: #fff;
 
@@ -526,17 +558,21 @@ input[type=number] {
 
 }
 
+.product-actions p {}
 
-.product-actions button:hover {
-
-    background-color: #0056b3;
+.themgiohang {
+    display: flex;
 
 }
 
 
-.quantity-control {
+.product-actions button:hover {
 
-    /* display: inline-block; */
+    background-color: #51705A
+}
+
+
+.quantity-control {
 
     margin-right: 10px;
     margin-top: -8%;
@@ -576,10 +612,11 @@ input[type=number] {
 
 
 .voucher-section {
+    border: none;
 
     margin-top: 30px;
 
-    border-top: 1px solid #ddd;
+    /* border-top: 1px solid #ddd; */
 
     padding-top: 20px;
 
@@ -598,13 +635,15 @@ input[type=number] {
 
 
 .voucher-cards {
-    background-color: #4D6A55;
+    border-radius: 10px;
+    background: #4D6A55;
     display: flex;
-
-    justify-content: space-between;
-
+    border: none;
     margin-bottom: 20px;
-
+    width: 1084px;
+    height: 141.24px;
+    flex-shrink: 0;
+    margin-left: 5%;
 }
 
 
@@ -657,34 +696,51 @@ input[type=number] {
 }
 
 .description {
-
+    margin-left: 8%;
+    border: none;
     margin-top: 30px;
-
-    border-top: 1px solid #ddd;
-
     padding-top: 20px;
+    width: 975px;
+    height: 330px;
+    flex-shrink: 0;
+    line-height: 50px;
+
 
 }
 
 .description h3 {
 
     font-size: 18px;
-
     margin-bottom: 10px;
+    color: #2E2E2E;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-style: normal;
 
 }
 
 .description p {
 
     line-height: 1.6;
+    color: #2E2E2E;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-style: normal;
 
+}
+
+.chivy {
+    color: #2E2E2E;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-style: normal;
 }
 
 .about-author {
 
     margin-top: 30px;
 
-    border-top: 1px solid #ddd;
+    /* border-top: 1px solid #ddd; */
 
     padding-top: 20px;
 
@@ -712,7 +768,10 @@ input[type=number] {
 
 .product-details span {
 
-    font-weight: bold;
+    color: #2E2E2E;
+    font-family: Lato;
+    font-size: 15px;
+    font-style: normal;
 
 }
 
@@ -752,4 +811,249 @@ input[type=number] {
 
 }
 
-.tacgia {}
+.produut-price {
+    color: #C86F46;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    margin-left: 30%;
+    font-style: normal;
+}
+
+.quantity-input {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.quantity-input button {
+
+    background-color: #FFF;
+
+    border: none;
+
+    color: white;
+
+    padding: 2px 2px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 16px;
+
+    margin: 2px 2px;
+
+    cursor: pointer;
+
+}
+
+
+.quantity-input input {
+
+    width: 40px;
+
+    text-align: center;
+
+}
+
+.soluong {
+    display: flex;
+    width: 91.935px;
+    height: 29.07px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #2E2E2E;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.quantity-input {
+    background-color: #FFF;
+    width: 150px;
+    height: 30px;
+    margin-left: 5%;
+    text-align: center;
+    justify-content: center;
+}
+
+.soluong1 {
+    margin-top: -5%;
+}
+
+.voucher {
+    width: 272px;
+    height: 45px;
+    flex-shrink: 0;
+    color: #2E2E2E;
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    margin-left: 8%;
+}
+
+.voucher-cards {
+    display: flex;
+    gap: 10%;
+
+    /* justify-content: space-between; */
+
+    background-color: #4D6A55;
+
+    padding: 10px;
+
+    border-radius: 10px;
+}
+
+.ticket {
+
+    display: flex;
+
+    align-items: center;
+
+    border-radius: 10px;
+
+    padding: 0 10px 0 10px;
+
+    color: white;
+
+}
+
+
+.ticket .text {
+
+    margin-right: 10px;
+
+}
+
+
+.ticket .text h2 {
+
+    font-size: 1.2rem;
+
+    margin-bottom: 5px;
+
+}
+
+
+.ticket .text p {
+
+    font-size: 0.8rem;
+
+    margin-bottom: 5px;
+
+}
+
+
+.ticket .text span {
+    font-size: 0.7rem;
+    color: #ccc;
+
+}
+
+
+.ticket .icon {
+    position: relative;
+    left: 15%;
+    top: -2px;
+}
+
+.ticket .icon svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.thongtinchitietcuongsach {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: -100%;
+    grid-auto-rows: 50px;
+
+}
+
+
+.sale-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: #E9F1EC;
+    padding: 10px;
+    text-align: center;
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.item p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+button {
+    background-color: #6e8540;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5b7132;
+}
+
+#sanphamthem {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #E9F1EC;
+    width: 1200px;
+    height: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.xemthem {
+    border-radius: 5px;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 43%;
+}
+
+.sachtuongtu {
+    margin-left: 5%;
+    width: 297px;
+    /* height: 30px; */
+    flex-shrink: 0;
+    color: #2E2E2E;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    
+}
