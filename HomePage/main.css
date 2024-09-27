@@ -1,11 +1,21 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-html {
+html,
+body {
     scroll-behavior: smooth;
-    font-family: Lato;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -21,7 +31,7 @@ header {
     box-sizing: border-box;
 }
 
-nav {
+header nav {
     display: flex;
     padding: 20px 0;
     z-index: 1;
@@ -84,16 +94,18 @@ nav .menu {
 
 }
 
-footer {
+footer nav {
+    position: absolute;
+    top: 250%;
     background-size: cover;
     background: #51705A;
-    ;
     width: 100%;
     height: 450px;
     flex-shrink: 0;
     font-family: "Lato", sans-serif;
-
+    bottom: 0;
 }
+
 
 .divider {
     border-left: 3px solid white;
@@ -101,11 +113,12 @@ footer {
     margin: 0 20px;
 }
 
-nav {
+footer nav {
     display: flex;
 }
 
 nav .footerleft {
+    top: 10%;
     position: absolute;
     left: 5%;
     display: grid;
@@ -133,6 +146,7 @@ nav .thongtinlogo p {
 }
 
 nav .top {
+    margin-top: 1%;
     display: flex;
     font-family: "Lato", sans-serif;
     gap: 50px;
@@ -163,6 +177,7 @@ nav .sodienthoai {
 
 .hotro,
 .dichvu {
+
     display: grid;
     grid-template-rows: repeat(2, 0fr);
     gap: 30px;
@@ -193,9 +208,11 @@ nav .sodienthoai {
 }
 
 nav .foodterright {
+
     position: absolute;
-    top: 95px;
+    top: 10%;
     left: 30%;
+    height: 20px;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
@@ -245,9 +262,12 @@ nav .foodterright {
     padding: 10px;
 
 }
+.partners .bidv {
+    height: 80px;
+}
 
 .vnpay {
-    width: 170px;
+    width: 150px;
     height: auto;
     flex-shrink: 0;
     background: #FFF;
@@ -263,8 +283,8 @@ nav .foodterright {
     font-family: Lato;
     font-size: 25px;
     font-style: normal;
-    margin-bottom:20px ;
-    
+    margin-bottom: 20px;
+
 }
 
 .sodienthoai p,
@@ -285,4 +305,193 @@ nav .foodterright {
 
 .sodienthoai {
     margin-left: 15%;
+}
+
+section {
+    height: 100%;
+    flex-grow: 1;
+}
+
+.anhleft {
+    margin-left: 38%;
+}
+
+.anhright {
+    margin-left: 35%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #E9F1EC;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.flash-sale .sale-items,
+.manga .items,
+.light-novel .items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: #E9F1EC;
+    padding: 10px;
+    text-align: center;
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.item p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+button {
+    background-color: #6e8540;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5b7132;
+}
+
+.icon-menu {
+    border-radius: 10px;
+    background: #E9F1EC;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon-menu .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.icon-item {
+    text-align: center;
+}
+
+.icon-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.icon-item p {
+    font-size: 14px;
+    color: #39573c;
+    font-weight: 500;
+}
+
+.iconlightnovel,
+.iconmanga,
+.iconflashsale {
+    display: flex;
+}
+
+.countdown {
+    display: flex;
+    margin-left: 5%;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: #4D6A55;
+    width: 360px;
+    height: 45px;
+    flex-shrink: 0;
+}
+
+.countdown h3 {
+    margin-top: 10px;
+    margin-left: 30px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 19px;
+    font-style: normal;
+}
+
+#countdown-timer {
+    margin-top: 12px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #000000;
+}
+
+#countdown-timer span {
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.flash-sale h2,
+.manga h2 {
+    display: flex;
+    width: 120px;
+    height: 44px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #4D6A55;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+}
+
+.light-novel h2 {
+    margin-left: 2%;
+    color: #4D6A55;
+    text-align: left;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+}
+
+.light-novel,
+.manga,
+.flash-sale {
+    text-align: center;
+}
+
+.light-novel button,
+.manga button,
+.flash-sale button {
+    background-color: #51705A;
+}
+
+.xemthem {
+    border-radius: 5px;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
